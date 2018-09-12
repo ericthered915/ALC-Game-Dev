@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{D512E57B-8CCA-E799-87AB-8E6B846509DE}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Charater Movement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CharacterMovement.cs">
     <Files>
-      <File FileName="Assets/Scripts/Charater Movement.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CharacterMovement.cs" Line="5" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

@@ -19,7 +19,7 @@ public class EnemyPatrol : MonoBehaviour {
 
 
 		
-	}
+
 	
 	// Update is called once per frame
 	void Update () {
@@ -29,11 +29,11 @@ public class EnemyPatrol : MonoBehaviour {
 			MoveRight = !MoveRight;
 		}
 		if (MoveRight) {
-			transform.localScale = new Vector3 (-1f, 1f, 1f);
-			GetComponent<Rigidbody2D> ().velocity = new Vector2 (MoveSpeed, Getcomponent<Rigidbody2D> ().velocity.y);
+			transform.localScale = new Vector3 (-8f, 8f, 1f);
+			GetComponent<Rigidbody2D> ().velocity = new Vector2 (MoveSpeed, GetComponent<Rigidbody2D> ().velocity.y);
 		}
 		else {
-			transform.localScale = new Vector3(1f,1f,1f);
+			transform.localScale = new Vector3(8f,8f,1f);
 			GetComponent<Rigidbody2D> ().velocity = new Vector2 (-MoveSpeed, GetComponent<Rigidbody2D> ().velocity.y);
 
 

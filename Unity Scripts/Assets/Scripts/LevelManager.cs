@@ -30,9 +30,8 @@ public class LevelManager : MonoBehaviour {
 
 	public IEnumerator RespawnPlayerCo(){
 		//Generate Death Particle
-		Instantiate (deathParticle, Player.transform.postiton, Player.transform.roation);
+		Instantiate (deathParticle, Player.transform.position, Player.transform.rotation);
 		//HidePlayer
-		Player.setActive = false;
 		Player.GetComponent<Renderer> ().enabled = false;
 		// Gravity Reset
 		gravityStore = Player.GetComponent<Rigidbody2D> ().gravityScale;
@@ -43,7 +42,7 @@ public class LevelManager : MonoBehaviour {
 		//Debug Message
 		Debug.Log ("Player Respawn");
 		//Respawn Delay
-		yield return new WaitForSeconds (resapwnDelay);
+		yield return new WaitForSeconds (respawnDelay);
 		//Gravity Restore
 		Player.GetComponent<Rigidbody2D> ().gravityScale = gravityStore;
 		//Match Players transform position
@@ -65,4 +64,4 @@ public class LevelManager : MonoBehaviour {
 
 		
 	}
-}
+

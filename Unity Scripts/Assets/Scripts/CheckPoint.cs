@@ -17,7 +17,7 @@ using UnityEngine;
 
 	private void OnTriggerEnter2D(Collider2D other){
 				if(other.name == "Player"){
-					levelManager.currentCheckPoint = gameObject;
+					levelManager.CurrentCheckPoint = gameObject;
 					Debug.Log ("Activated CheckPoint" + transform.position);
 				}
 			

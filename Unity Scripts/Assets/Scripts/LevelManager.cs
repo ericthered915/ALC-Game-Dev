@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour {
-	public GameObject currentCheckPoint;
-	private Rigidbody2D Player;
+	public GameObject CurrentCheckPoint;
+	public Rigidbody2D Player;
 
 	//Particles
 	public GameObject deathParticle;
-	public GameObject respawnParicle;
+	public GameObject RespawnParticle;
 
 	//Respawn Delay
 	public float respawnDelay;
@@ -21,7 +21,7 @@ public class LevelManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Player = FindObjectOfType<RididBody2D> ();
+//Player = FindObjectOfType<RigidBody2D> ();
 	}
 
 	public void RespawnPlayer(){
@@ -46,13 +46,13 @@ public class LevelManager : MonoBehaviour {
 		//Gravity Restore
 		Player.GetComponent<Rigidbody2D> ().gravityScale = gravityStore;
 		//Match Players transform position
-		Player.transform.position = currentCheckPoint.transform.position;
+		Player.transform.position = CurrentCheckPoint.transform.position;
 		//ShowPlayer
 		//Player.enabled = true;
 		Player.GetComponent<Renderer> ().enabled = true;
 
 		//Spawn Player
-		Instantiate (RespawnParticle, CurrentCheckPoint.transform.position, CurrentCheckpoint.transform.rotation);
+		Instantiate (RespawnParticle, CurrentCheckPoint.transform.position, CurrentCheckPoint.transform.rotation);
 	
 
 

@@ -34,15 +34,14 @@ public class CharacterMove: MonoBehaviour
 	void Update()
 	{
 		// This code makes the charater jump
-		if (Input.GetKeyDown(KeyCode.Space) && grounded)
-		{
+		if(Input.GetKeyDown (KeyCode.Space)&& grounded){
 			Jump();
 		}
 		// double jump code
 		if (grounded)
 			doubleJump = false;
 
-		if (Input.GetKeyDown (KeyCode.Space) && !doubleJump && !grounded) {
+		if (Input.GetKeyDown (KeyCode.Space) && !doubleJump && !grounded){
 			Jump ();
 			doubleJump = true;
 		}
@@ -53,21 +52,25 @@ public class CharacterMove: MonoBehaviour
 		moveVelocity = 0f; 
 
 		// This code makes the character move from side to side using the A&D keys
-		if (Input.GetKey(KeyCode.D))
-		{
-			//GetComponent<Rigidbody>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
-			moveVelocity = MoveSpeed; 
+		if(Input.GetKey (KeyCode.D)){
+			//GetComponent<Rigidbody2D>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+			moveVelocity = MoveSpeed;
 		}
-		if (Input.GetKey(KeyCode.A))
-		{
+		if(Input.GetKey (KeyCode.A)){
 			//GetComponent<Rigidbody2D>().velocity = new Vector2(-MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
-			moveVelocity = -MoveSpeed; 
+			moveVelocity = -MoveSpeed;
 		}
-		GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
 
+			GetComponent<Rigidbody2D> ().velocity = new Vector2 (moveVelocity, GetComponent<Rigidbody2D> ().velocity.y);
+
+			//Player flip
+			if (GetComponent<Rigidbody2D> ().velocity.x > 0)
+				transform.localScale = new Vector3 (30f, 20f, 9f);
+			else if (GetComponent<Rigidbody2D> ().velocity.x < 0)
+				transform.localScale = new Vector3 (-30f, 20f, 9f);
+		
 	}
 	public void Jump(){
-
 		GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, JumpHeight);
 	}
 }

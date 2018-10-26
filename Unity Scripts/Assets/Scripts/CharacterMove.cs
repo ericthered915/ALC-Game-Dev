@@ -33,18 +33,21 @@ public class CharacterMove: MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		// This code makes the charater jump
-		if(Input.GetKeyDown (KeyCode.Space)&& grounded){
-			Jump();
-		}
-		// double jump code
-		if (grounded)
-			doubleJump = false;
+        // This code makes the character jump
+        if(Input.GetKeyDown (KeyCode.Space)&& grounded){
+            Jump();
+        }
 
-		if (Input.GetKeyDown (KeyCode.Space) && !doubleJump && !grounded){
-			Jump ();
-			doubleJump = true;
-		}
+        // double jump code
+        if (grounded)
+            doubleJump = false;
+
+        if (Input.GetKeyDown(KeyCode.Space) && !doubleJump && !grounded)
+        {
+            Jump();
+            doubleJump = true;
+        }
+		
 
 
 
@@ -65,9 +68,9 @@ public class CharacterMove: MonoBehaviour
 
 			//Player flip
 			if (GetComponent<Rigidbody2D> ().velocity.x > 0)
-				transform.localScale = new Vector3 (30f, 20f, 9f);
+				transform.localScale = new Vector3 (38f, 30f, 9f);
 			else if (GetComponent<Rigidbody2D> ().velocity.x < 0)
-				transform.localScale = new Vector3 (-30f, 20f, 9f);
+				transform.localScale = new Vector3 (-38f,-30f,9f);
 		
 	}
 	public void Jump(){

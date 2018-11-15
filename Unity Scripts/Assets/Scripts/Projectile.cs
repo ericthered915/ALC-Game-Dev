@@ -6,6 +6,7 @@ public class Projectile : MonoBehaviour
 {
 
     public float Speed;
+
     public float TimeOut;
     public GameObject Player;
 
@@ -19,6 +20,7 @@ public class Projectile : MonoBehaviour
     void Start()
     {
         Player = GameObject.Find("Player");
+
         EnemyDeath = Resources.Load("Prefabs/DeathParticle") as GameObject;
 
         ProjectileParticle = Resources.Load("Prefabs/RespawnParticle") as GameObject;
@@ -26,9 +28,7 @@ public class Projectile : MonoBehaviour
         if (Player.transform.localScale.x < 0)
             Speed = -Speed;
 
-        // Speed = Speed * Mathf.Sign(Player.transform.localScale.x);
 
-        // GetComponent<Rigidbody2D>().velocity = new Vector2(Speed + (Player.GetComponent<Rigidbody2D>().velocity.x/3),GetComponent<Rigidbody2D>().velocity.y + (Player.GetComponent<Rigidbody2D>().velocity.y/3));
 
         // Destroys Projectile after X seconds
         Destroy(gameObject, TimeOut);
@@ -43,17 +43,24 @@ public class Projectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        //Destroys enemey on contact with projectile. Adds points. 
         if (other.tag == "Enemy")
         {
             Instantiate(EnemyDeath, other.transform.position, other.transform.rotation);
             Destroy(other.gameObject);
             ScoreManager.AddPoints(PointsForKill);
         }
-        void OnCollisionEnter2D(Collision2D other)
-        {
-            Instantiate(ProjectileParticle, transform.position, transform.rotation);
-            Destroy(gameObject);
-        }
+
+
+        // Instantiate(ProjectileParticle, transform.position, transform.rotation);
+        Destroy(gameObject);
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        Instantiate(ProjectileParticle, transform.position, transform.rotation);
+        Destroy(gameObject);
+
     }
 }
 

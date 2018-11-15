@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{D512E57B-8CCA-E799-87AB-8E6B846509DE}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerShoot.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Projectile.cs">
     <Files>
-      <File FileName="Assets/Scripts/Projectile.cs" Line="52" Column="14" />
-      <File FileName="Assets/Scripts/PlayerShoot.cs" Line="16" Column="77" />
+      <File FileName="Assets/Scripts/PlayerShoot.cs" Line="13" Column="6" />
+      <File FileName="Assets/Scripts/Projectile.cs" Line="52" Column="51" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

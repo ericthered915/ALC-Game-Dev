@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{D512E57B-8CCA-E799-87AB-8E6B846509DE}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DestroyFinishedParticle.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LevelManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/Projectile.cs" Line="29" Column="28" />
-      <File FileName="Assets/Scripts/PlayerShoot.cs" Line="13" Column="6" />
-      <File FileName="Assets/Scripts/DestroyFinishedParticle.cs" Line="5" Column="7" />
+      <File FileName="Assets/Scripts/Projectile.cs" Line="26" Column="89" />
+      <File FileName="Assets/Scripts/PlayerShoot.cs" Line="20" Column="14" />
+      <File FileName="Assets/Scripts/DestroyFinishedParticle.cs" Line="29" Column="1" />
+      <File FileName="Assets/Scripts/LevelManager.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

@@ -23,7 +23,8 @@ public class Projectile : MonoBehaviour
 
         EnemyDeath = Resources.Load("Prefabs/DeathParticle") as GameObject;
 
-        ProjectileParticle = Resources.Load("Prefabs/RespawnParticle") as GameObject;
+        ProjectileParticle = Resources.Load("Prefabs/ProjectileParticle") as GameObject;
+
 
         if (Player.transform.localScale.x < 0)
             Speed = -Speed;
@@ -31,7 +32,7 @@ public class Projectile : MonoBehaviour
 
 
         // Destroys Projectile after X seconds
-        Destroy(gameObject, TimeOut);
+        Destroy(gameObject,TimeOut);
 
     }
 

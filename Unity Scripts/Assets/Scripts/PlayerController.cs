@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CharacterMove : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
 
     //Player movement variables
@@ -103,3 +103,5 @@ public class CharacterMove : MonoBehaviour
         animator.SetBool("isJumping", true);
     }
 }
+
+  

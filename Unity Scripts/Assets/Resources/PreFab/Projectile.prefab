@@ -91,7 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 30
   TimeOut: 5
-  Player: {fileID: 0}
+  Player: {fileID: 1002192058879942, guid: d0471d5e11f8d4cfa9c1a8dad52e76d8, type: 2}
   EnemyDeath: {fileID: 1531121352705552, guid: aa99f9ca7d75145f19d61fbed77a1a5d, type: 2}
   ProjectileParticle: {fileID: 1393177073806374, guid: fdc3ba940198c4166a79b39707dceb8e,
     type: 2}

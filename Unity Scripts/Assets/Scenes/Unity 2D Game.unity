@@ -295,7 +295,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 423628205}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.9202902, y: 1.1662357, z: 0}
+  m_LocalPosition: {x: -2.9202902, y: 0.85, z: 0}
   m_LocalScale: {x: 4.83014, y: 2.7654948, z: 2.7456212}
   m_Children: []
   m_Father: {fileID: 928857714}
@@ -326,7 +326,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 444494532}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 67, y: -14.47, z: -0.0015087635}
+  m_LocalPosition: {x: 52.1, y: -6.5, z: -0.0015087635}
   m_LocalScale: {x: 6.386239, y: 5.5625, z: 0.9249999}
   m_Children: []
   m_Father: {fileID: 0}
@@ -522,7 +522,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 520671014}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2972106, y: 1.0534348, z: 0}
+  m_LocalPosition: {x: 1.2972106, y: 0.92, z: 0}
   m_LocalScale: {x: 7.7182255, y: 3.9555502, z: 7.718212}
   m_Children: []
   m_Father: {fileID: 928857714}
@@ -575,7 +575,7 @@ Prefab:
     - target: {fileID: 114131455620950710, guid: d0471d5e11f8d4cfa9c1a8dad52e76d8,
         type: 2}
       propertyPath: JumpHeight
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d0471d5e11f8d4cfa9c1a8dad52e76d8, type: 2}
@@ -615,12 +615,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 15
-  jumpHeight: 5
+  jumpHeight: 10
   groundCheck: {fileID: 1327869822}
   groundCheckRadius: 0
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 257
   animator: {fileID: 562237713}
 --- !u!1001 &593680031
 Prefab:

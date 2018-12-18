@@ -90,10 +90,10 @@ public class PlayerController : MonoBehaviour
 
         //Player flip
         if (GetComponent<Rigidbody2D>().velocity.x > 0)
-            transform.localScale = new Vector3(1f, 1f, 1f);
+            transform.localScale = new Vector3(7f, 6f, 1f);
 
         else if (GetComponent<Rigidbody2D>().velocity.x < 0)
-            transform.localScale = new Vector3(-1f, 1f, 1f);
+            transform.localScale = new Vector3(-7f, 6f, 1f);
 
     }
 
@@ -103,5 +103,4 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("isJumping", true);
     }
 }
-
   

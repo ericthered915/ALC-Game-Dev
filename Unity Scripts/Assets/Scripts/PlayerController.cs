@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     {
         // Animation reset
         animator.SetBool("isWalking", false);
-        animator.SetBool("isJumping", false);
+        animator.SetBool("IsJumping", false);
 
     }
 
@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
         if (grounded)
         {
             doubleJump = false;
-            animator.SetBool("isJumping", false);
+            animator.SetBool("IsJumping", false);
         }
 
 
@@ -100,7 +100,7 @@ public class PlayerController : MonoBehaviour
     public void Jump()
     {
         GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
-        animator.SetBool("isJumping", true);
+        animator.SetBool("IsJumping", true);
     }
 }
   

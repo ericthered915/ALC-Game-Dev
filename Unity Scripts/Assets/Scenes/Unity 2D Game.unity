@@ -577,6 +577,16 @@ Prefab:
       propertyPath: JumpHeight
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 61178454100269730, guid: d0471d5e11f8d4cfa9c1a8dad52e76d8,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 61178454100269730, guid: d0471d5e11f8d4cfa9c1a8dad52e76d8,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.94
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d0471d5e11f8d4cfa9c1a8dad52e76d8, type: 2}
   m_IsPrefabParent: 0
@@ -615,7 +625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 15
-  jumpHeight: 25
+  jumpHeight: 35
   groundCheck: {fileID: 1327869822}
   groundCheckRadius: 0
   whatIsGround:
